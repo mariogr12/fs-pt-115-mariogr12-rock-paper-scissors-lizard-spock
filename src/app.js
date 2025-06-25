@@ -12,7 +12,7 @@ const eleccionAutomatica = (opciones) => {
 }
 
 let eleccionUsuario = prompt("Elige una de las siguientes opciones: Rock, Paper, Scissors, Lizard o Spock")
-eleccionUsuario=eleccionUsuario.charAt(0).toUpperCase()+eleccionUsuario.slice(1);
+eleccionUsuario=eleccionUsuario.charAt(0).toUpperCase()+eleccionUsuario.slice(1).toLowerCase();
 
 let eleccionCpu = eleccionAutomatica(opcionesJuego)
 let jugadaActual = eleccionUsuario + eleccionCpu
